@@ -1,5 +1,11 @@
 import { defineConfig } from "unocss";
 
 export default defineConfig({
-  // ...UnoCSS options
+  theme: {
+    backgroundColor: {
+      primary: "#ececec",
+      "primary-hover": "#dcdcdc",
+      "primary-active": "#ccc"
+    }
+  }
 });
