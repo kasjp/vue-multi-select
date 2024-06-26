@@ -29,7 +29,8 @@ export default defineConfig({
     lib: {
       entry: fileURLToPath(new URL("./src/index.ts", import.meta.url)),
       name: "VueMultiSelect",
-      fileName: "vue-multi-select"
+      fileName: "vue-multi-select",
+      formats: ["es"]
     },
     rollupOptions: {
       external: ["vue"],
