@@ -30,8 +30,10 @@ function handleSelect(currency: string, value: boolean) {
 }
 </script>
 <template>
-  <div class="multi-select-wrapper flex flex-col gap-12 p-7 pt-10 bg-white">
-    <div class="selected grid grid-cols-3 gap-y-7 gap-4">
+  <div
+    class="multi-select-wrapper flex flex-col gap-12 p-7 pt-10 bg-white box-border"
+  >
+    <div class="selected grid sm:grid-cols-3 gap-y-7 gap-4">
       <k-chip
         v-for="label in selectedValuesList"
         :key="label + '_selected'"
@@ -42,7 +44,7 @@ function handleSelect(currency: string, value: boolean) {
         {{ label }}
       </k-chip>
     </div>
-    <div class="grid grid-cols-3 gap-y-7 gap-x-4">
+    <div class="grid sm:grid-cols-3 gap-y-7 gap-x-4">
       <k-checkbox
         v-for="label in Object.keys(model)"
         :key="label"
