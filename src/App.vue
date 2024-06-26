@@ -16,7 +16,7 @@ const currencies = reactive({
 </script>
 
 <template>
-  <div class="flex justify-center items-center h-full">
+  <div class="flex justify-center items-center sm:h-full">
     <k-multi-select
       class="w-2xl"
       :model-value="currencies"
